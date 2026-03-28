@@ -928,7 +928,14 @@ alert-warning {
 
 .animation-slide .item,
 .header-slider-preloader {
-    height: 780px;
+    height: 850px; /* Increased for mobile for better visual */
+}
+
+@media (min-width: 992px) {
+    .animation-slide .item,
+    .header-slider-preloader {
+        height: 780px; 
+    }
 }
 
 .animation-slide .item {
