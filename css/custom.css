@@ -3017,3 +3017,117 @@ form div.required label.control-label:after {
     content:" * ";
     color:red;
 }
+/* Room Booking Section Styles */
+.section-rooms {
+    padding: 5rem 0;
+    background-color: #f8f9fa;
+}
+
+.room-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.room-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.room-card .card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.room-card .card-body {
+    padding: 1.5rem;
+}
+
+.room-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #FF6F00;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.room-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #0F172B;
+}
+
+.room-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1.25rem;
+    min-height: 3rem;
+}
+
+.room-amenities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid #eee;
+}
+
+.amenity-item {
+    font-size: 0.8rem;
+    color: #444;
+    display: flex;
+    align-items: center;
+    background: #f1f3f5;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.amenity-item i {
+    margin-right: 6px;
+    color: #bd0f0f;
+}
+
+.room-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.room-price {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #bd0f0f;
+}
+
+.room-price span {
+    font-size: 0.8rem;
+    color: #888;
+    font-weight: 400;
+}
+
+.btn-book {
+    background-color: #0F172B;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-book:hover {
+    background-color: #bd0f0f;
+    color: #fff;
+}

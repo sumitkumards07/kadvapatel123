@@ -139,6 +139,130 @@
         </div>
     </div>
 </div>
+<!-- Rooms Selection Section -->
+<div class="section section-rooms" id="rooms">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="section-title text-center mb-5">
+                    <h2 class="block-title fs-25 mb-2 font-weight-bold">Our Rooms & Categories</h2>
+                    <p class="text-muted">Choose the perfect room for your stay in Dwarka.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- AC Room 2 Bed -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="room-card card position-relative border-0 shadow-sm">
+                    <img src="images/S.jpg" class="card-img-top" alt="AC Room 2 Bed" loading="lazy">
+                    <div class="card-body">
+                        <h5 class="room-title">AC Room 2 Bed</h5>
+                        <p class="room-description">Compact and comfortable with 2 beds and full AC, ideal for travelers.</p>
+                        <div class="room-amenities">
+                            <span class="amenity-item"><i class="fa fa-bed"></i> 2 Beds</span>
+                            <span class="amenity-item"><i class="fa fa-snowflake-o"></i> AC</span>
+                            <span class="amenity-item"><i class="fa fa-wifi"></i> WiFi</span>
+                            <span class="amenity-item"><i class="fa fa-television"></i> TV</span>
+                            <span class="amenity-item"><i class="fa fa-tint"></i> Hot Water</span>
+                        </div>
+                        <div class="room-footer mt-auto">
+                            <div class="room-price">₹1,650 <span>/ night</span></div>
+                            <button class="btn btn-book" onclick="openBookingModal('AC Room 2 Bed', '₹1,650')">BOOK NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Best Room (TOP CHOICE) -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="room-card card position-relative border-0 shadow-sm highlight-room">
+                    <div class="room-badge">TOP CHOICE</div>
+                    <img src="images/s1.jpg" class="card-img-top" alt="Best Room" loading="lazy">
+                    <div class="card-body">
+                        <h5 class="room-title">Best Room</h5>
+                        <p class="room-description">Our premium offering with the best views and comfort.</p>
+                        <div class="room-amenities">
+                            <span class="amenity-item"><i class="fa fa-bed"></i> Comfort Bed</span>
+                            <span class="amenity-item"><i class="fa fa-snowflake-o"></i> AC</span>
+                            <span class="amenity-item"><i class="fa fa-wifi"></i> WiFi</span>
+                            <span class="amenity-item"><i class="fa fa-television"></i> TV</span>
+                            <span class="amenity-item"><i class="fa fa-tint"></i> Hot Water</span>
+                        </div>
+                        <div class="room-footer mt-auto">
+                            <div class="room-price">₹2,445 <span>/ night</span></div>
+                            <button class="btn btn-book" onclick="openBookingModal('Best Room', '₹2,445')">BOOK NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- AC Room 4 Bed -->
+            <div class="col-lg-4 col-md-12 mb-4">
+                <div class="room-card card position-relative border-0 shadow-sm">
+                    <img src="images/d3.jpg" class="card-img-top" alt="AC Room 4 Bed" loading="lazy">
+                    <div class="card-body">
+                        <h5 class="room-title">AC Room 4 Bed</h5>
+                        <p class="room-description">Spacious room with 4 beds, perfect for groups and families.</p>
+                        <div class="room-amenities">
+                            <span class="amenity-item"><i class="fa fa-bed"></i> 4 Beds</span>
+                            <span class="amenity-item"><i class="fa fa-snowflake-o"></i> AC</span>
+                            <span class="amenity-item"><i class="fa fa-wifi"></i> WiFi</span>
+                            <span class="amenity-item"><i class="fa fa-television"></i> TV</span>
+                            <span class="amenity-item"><i class="fa fa-tint"></i> Hot Water</span>
+                        </div>
+                        <div class="room-footer mt-auto">
+                            <div class="room-price">Contact <span>for Price</span></div>
+                            <button class="btn btn-book" onclick="openBookingModal('AC Room 4 Bed', 'Contact for Price')">BOOK NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Booking Enquiry Modal -->
+<div class="modal fade" id="bookingModal" tabindex="-1" role="dialog" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content border-0 shadow">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title" id="bookingModalLabel">Enquiry for <span id="modalRoomName">Room</span></h5>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form id="bookingForm" onsubmit="sendToWhatsApp(event)">
+        <div class="modal-body p-4">
+            <input type="hidden" id="selectedRoom">
+            <div class="form-group mb-3">
+                <label class="font-weight-600">Full Name</label>
+                <input type="text" id="custName" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group mb-3">
+                <label class="font-weight-600">Phone Number</label>
+                <input type="tel" id="custPhone" class="form-control" placeholder="Enter mobile number" required>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group mb-3">
+                    <label class="font-weight-600">Check-in Date</label>
+                    <input type="date" id="checkIn" class="form-control" required>
+                </div>
+                <div class="col-md-6 form-group mb-3">
+                    <label class="font-weight-600">Check-out Date</label>
+                    <input type="date" id="checkOut" class="form-control" required>
+                </div>
+            </div>
+            <div class="form-group mb-0 text-center">
+                <p class="text-muted small">You will be redirected to WhatsApp to confirm your enquiry.</p>
+            </div>
+        </div>
+        <div class="modal-footer border-0 p-4">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary px-4">SEND ENQUIRY</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
 <div class="section section-about">
     <div class="container">
         <div class="row align-items-center">
@@ -411,14 +535,38 @@ jQuery('#subscribe-form').yiiActiveForm([{"id":"subscribe-email","name":"email",
             return false; // Cancel form submitting.
    });
    
-});</script>        <script>
-            jQuery(document).on("pjax:complete", "#flash_msg", function (event) {
-                setTimeout(function () {
-                    $('.alert-messages').fadeOut(1500);
-                }, 1500);
-            });
+});</script><script>
+function openBookingModal(roomName, price) {
+    document.getElementById('modalRoomName').innerText = roomName;
+    document.getElementById('selectedRoom').value = roomName;
+    $('#bookingModal').modal('show');
+}
 
-            $(document).ready(function () {
+function sendToWhatsApp(event) {
+    event.preventDefault();
+    
+    const room = document.getElementById('selectedRoom').value;
+    const name = document.getElementById('custName').value;
+    const phone = document.getElementById('custPhone').value;
+    const checkIn = document.getElementById('checkIn').value;
+    const checkOut = document.getElementById('checkOut').value;
+    
+    const whatsappMobile = "7496980420"; // User's WhatsApp number
+    const message = `*Booking Enquiry - Kadva Patel Samaj Dwarka*%0A%0A` +
+                    `*Room:* ${room}%0A` +
+                    `*Name:* ${name}%0A` +
+                    `*Phone:* ${phone}%0A` +
+                    `*Check-in:* ${checkIn}%0A` +
+                    `*Check-out:* ${checkOut}%0A%0A` +
+                    `I would like to inquire about availability for these dates.`;
+    
+    const whatsappUrl = `https://wa.me/${whatsappMobile}?text=${message}`;
+    window.open(whatsappUrl, '_blank');
+    $('#bookingModal').modal('hide');
+    document.getElementById('bookingForm').reset();
+}
+
+jQuery(document).ready(function () {
                 setTimeout(function () {
                     $('.alert-messages').fadeOut(1500);
                 }, 1500);
