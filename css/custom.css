@@ -44,6 +44,103 @@ a:hover {
 
 
 /* Background color ---------- */
+/* Mobile-First Booking Bar Glassmorphism Styles */
+.booking-bar-wrapper {
+    margin-top: 20px; /* Default for mobile */
+    position: relative;
+    z-index: 10;
+    padding-bottom: 20px;
+}
+
+.booking-bar {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.booking-bar .form-group {
+    margin-bottom: 15px;
+}
+
+.booking-bar .form-label {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.booking-bar .form-control, 
+.booking-bar .form-select {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    height: 48px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.booking-bar .form-control:focus {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: #e2a846;
+    color: #ffffff;
+    box-shadow: none;
+}
+
+.booking-bar .form-control::-webkit-calendar-picker-indicator {
+    filter: invert(0.8);
+}
+
+.booking-bar .btn-check-availability {
+    background: linear-gradient(135deg, #e2a846, #c88921);
+    border: none;
+    color: #000;
+    font-weight: 800;
+    height: 52px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.booking-bar .info-text {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* Tablet & Desktop Refinements (Progressive Enhancement) */
+@media (min-width: 992px) {
+    .booking-bar-wrapper {
+        margin-top: -80px; /* Overlap effect on desktop */
+        padding-bottom: 50px;
+    }
+    
+    .booking-bar {
+        padding: 30px 40px;
+        border-radius: 25px;
+    }
+    
+    .booking-bar .row > div {
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .booking-bar .row > div:last-child {
+        border-right: none;
+    }
+    
+    .booking-bar .form-group {
+        margin-bottom: 0;
+    }
+    
+    .booking-bar .btn-check-availability {
+        margin-top: 26px; /* Align with input label */
+    }
+}
 .bg-primary {
     background-color: #bd0f0f !important;
 }
