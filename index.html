@@ -4,7 +4,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="dns-prefetch" href="https://maps.googleapis.com">
-        <link href="https://fonts.googleapis.com/css?family=Caveat:400,700|Playfair+Display:400,400i,700,700i,900,900i|Sarabun:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Caveat:400,700|Playfair+Display:400,400i,700,700i,900,900i|Sarabun:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800|Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkqueIlcgMHfjCMrstSoVfXqcigDbtYco"></script>
         <meta name="csrf-param" content="_csrf">
 <meta name="csrf-token" content="C1Ka5tUn-7sGTVKHVYcWORjjK-kU8hdi_2ltyVffWK5HPqmDt3G16m8CCLMEsFpxbtRzgyTAXyDHAy-IHY0bmw==">
@@ -24,18 +24,9 @@
 
 <nav class="navbar navbar-expand-lg navbar-light header-sticky shadow-sm">
     <div class="container">
-        <a class="navbar-brand m-0" href="/"></a>
+        <a class="navbar-brand m-0 font-weight-bold" href="/" style="font-family: 'Playfair Display', serif; font-size: 24px; color: var(--accent-color);">Kadva Patel Samaj</a>
         <div class="d-flex order-lg-last">
             <ul class="navbar-right d-flex align-items-center list-unstyled mb-0">
-
-                <li class="nav-item dropdown search-icon">
-                    <div class="dropdown-menu search-dropdown dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown1">
-                        <input type="email" class="form-control rounded-0" id="searc" placeholder="Search...">
-                    </div>
-                </li>
-                <li class="nav-item nav-btn">
-
-                </li>
             </ul>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -95,42 +86,7 @@
         <div class="slider_preloader_status"> </div>
     </div>
 </div>
-<section class="booking-bar-wrapper">
-    <div class="container">
-        <div class="booking-bar">
-            <form action="#rooms" class="row align-items-end">
-                <div class="col-lg-3 col-md-4">
-                    <div class="form-group mb-lg-0">
-                        <label class="form-label">Check-in</label>
-                        <input type="date" class="form-control" id="checkInBar" placeholder="dd/mm/yyyy">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                    <div class="form-group mb-lg-0">
-                        <label class="form-label">Check-out</label>
-                        <input type="date" class="form-control" id="checkOutBar" placeholder="dd/mm/yyyy">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                    <div class="form-group mb-lg-0">
-                        <label class="form-label">Guests</label>
-                        <select class="form-select form-control" id="guestsBar">
-                            <option value="1">1 Guest</option>
-                            <option value="2" selected>2 Guests</option>
-                            <option value="3">3 Guests</option>
-                            <option value="4">4 Guests</option>
-                            <option value="5+">5+ Guests</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <button type="submit" class="btn btn-check-availability js-scroll-trigger">Check Availability</button>
-                </div>
-            </form>
-            <p class="info-text mb-0">Fill dates & guests to enquire about availability.</p>
-        </div>
-    </div>
-</section>
+
 <!-- Rooms Selection Section -->
 <div class="section section-rooms" id="rooms">
     <div class="container">
@@ -232,15 +188,15 @@
                 <label class="font-weight-600">Phone Number</label>
                 <input type="tel" id="custPhone" class="form-control" placeholder="Enter mobile number" required>
             </div>
-            <div class="row">
-                <div class="col-md-6 form-group mb-3">
-                    <label class="font-weight-600">Check-in Date</label>
-                    <input type="date" id="checkIn" class="form-control" required>
-                </div>
-                <div class="col-md-6 form-group mb-3">
-                    <label class="font-weight-600">Check-out Date</label>
-                    <input type="date" id="checkOut" class="form-control" required>
-                </div>
+            <div class="form-group mb-3">
+                <label class="font-weight-600">Total Guests</label>
+                <select id="totalGuests" class="form-control" required>
+                    <option value="1">1 Guest</option>
+                    <option value="2" selected>2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5+">5+ Guests</option>
+                </select>
             </div>
             <div class="form-group mb-0 text-center">
                 <p class="text-muted small">You will be redirected to WhatsApp to confirm your enquiry.</p>
@@ -515,17 +471,15 @@ function sendToWhatsApp(event) {
     const room = document.getElementById('selectedRoom').value;
     const name = document.getElementById('custName').value;
     const phone = document.getElementById('custPhone').value;
-    const checkIn = document.getElementById('checkIn').value;
-    const checkOut = document.getElementById('checkOut').value;
+    const guests = document.getElementById('totalGuests').value;
     
     const whatsappMobile = "919256203512"; // User's WhatsApp number
     const message = `*Booking Enquiry - Kadva Patel Samaj Dwarka*%0A%0A` +
                     `*Room:* ${room}%0A` +
                     `*Name:* ${name}%0A` +
                     `*Phone:* ${phone}%0A` +
-                    `*Check-in:* ${checkIn}%0A` +
-                    `*Check-out:* ${checkOut}%0A%0A` +
-                    `I would like to inquire about availability for these dates.`;
+                    `*Guests:* ${guests}%0A%0A` +
+                    `I would like to inquire about room availability.`;
     
     const whatsappUrl = `https://wa.me/${whatsappMobile}?text=${message}`;
     window.open(whatsappUrl, '_blank');
