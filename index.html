@@ -19,12 +19,14 @@
 <link href="css/owl.carousel.min.css" rel="stylesheet">
 <link href="css/owl.theme.default.min.css" rel="stylesheet">
 <link href="css/jquery.fancybox.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">    </head>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="preload" as="image" href="images/hero.jpg">
+</head>
     <body>
 
 <nav class="navbar navbar-expand-lg navbar-light header-sticky shadow-sm">
     <div class="container">
-        <a class="navbar-brand m-0 font-weight-bold" href="/" style="font-family: 'Playfair Display', serif; font-size: 24px; color: var(--accent-color);">Kadva Patel Samaj</a>
+        <a class="navbar-brand m-0 font-weight-bold" href="/" style="font-family: 'Playfair Display', serif; font-size: 26px; color: var(--accent-color);">Kadva Patel Samaj</a>
         <div class="d-flex order-lg-last">
             <ul class="navbar-right d-flex align-items-center list-unstyled mb-0">
             </ul>
@@ -63,7 +65,7 @@
 <div class="hero-header">
     <div class="header-slider slider-two" id="home">
         <div class="animation-slide owl-carousel owl-theme" id="animation-slide">
-            <div class="item bg-img-hero" data-image-src="images/hero.jpg"></div>
+            <div class="item bg-img-hero" style="background-image: url('images/hero.jpg');" data-image-src="images/hero.jpg"></div>
         </div>
     </div>
     <div class="container">
@@ -73,7 +75,8 @@
                     <div class="header-text my-5">
 
                         <h1 class="header-title">Kadva Patel Samaj Authorized Partner - Dwarka</h1>
-                        <p class="header-des mb-0">Kadva Patel Samaj Authorized Partner</p>
+                        <p class="header-des mb-4">Experience the best of hospitality in the holy city of Dwarka.</p>
+                        <a href="#rooms" class="btn btn-primary btn-lg px-5 js-scroll-trigger">BOOK NOW</a>
                     </div>
                 </div>
                 <div class="col-md-5 d-none d-md-block">
@@ -304,7 +307,7 @@
             </div>
             <div class="card card-poster text-white flex-row align-items-end border-0">
                 <a href="#" class="tile-link position-absolute w-100 h-100 top-0 left-0"></a>
-                <img src="images/S.jpg" alt="Card image" class="bg-image">
+                <img src="images/S.jpg" alt="Card image" class="bg-image" loading="lazy">
                 <div class="card-body overlay-content position-relative">
                     <span class="item-tag text-uppercase bg-white font-weight-500 mb-2 d-inline-block">Sudama Setu</span>
                     <h5 class="card-title font-weight-bold text-white">Sudama Setu </h5>
@@ -398,8 +401,10 @@
                             Company Policy
                         </h3>
                         <ul class="footer-link list-unstyled menu mb-0">
-
                             <li class="mb-2"><a class="link d-block font-weight-500" href="terms.html">Terms & Conditions</a></li>
+                            <li class="mb-2"><a class="link d-block font-weight-500" href="disclaimer.html">Disclaimer</a></li>
+                            <li class="mb-2"><a class="link d-block font-weight-500" href="refund-policy.html">Refund Policy</a></li>
+                            <li class="mb-2"><a class="link d-block font-weight-500" href="cancellation-policy.html">Cancellation Policy</a></li>
                         </ul>
                     </div>
                 </div>
@@ -415,8 +420,10 @@
             </div>
             <div class="col-md-6">
                 <ul class="list-unstyled text-right mb-0">
-
-                    <li class="list-inline-item"><a href="terms.html" class="text-white">Terms & Conditions</a></li>
+                    <li class="list-inline-item mr-3"><a href="terms.html" class="text-white small">Terms & Conditions</a></li>
+                    <li class="list-inline-item mr-3"><a href="disclaimer.html" class="text-white small">Disclaimer</a></li>
+                    <li class="list-inline-item mr-3"><a href="refund-policy.html" class="text-white small">Refund Policy</a></li>
+                    <li class="list-inline-item"><a href="cancellation-policy.html" class="text-white small">Cancellation Policy</a></li>
                 </ul>
             </div>
         </div>
