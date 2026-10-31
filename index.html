@@ -91,23 +91,23 @@
 <body class="bg-sand-50 text-slate-800 font-sans antialiased overflow-x-hidden selection:bg-gold-500 selection:text-white pb-16 md:pb-0">
 
     <!-- Top Notice Banner -->
-    <div class="bg-navy-950 text-slate-300 text-xs py-2 px-4 border-b border-navy-850">
-        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-            <div class="flex items-center gap-2 text-center sm:text-left">
+    <div class="bg-navy-950 text-slate-300 text-xs py-1.5 px-4 border-b border-navy-850">
+        <div class="max-w-7xl mx-auto flex justify-between items-center text-xs">
+            <div class="flex items-center gap-2">
                 <span class="inline-flex items-center gap-1 bg-gold-500/20 text-gold-400 px-2 py-0.5 rounded-full text-[11px] font-semibold tracking-wide uppercase">
                     <span class="w-1.5 h-1.5 rounded-full bg-gold-400 animate-pulse"></span>
                     Dwarka Dham
                 </span>
-                <span class="hidden sm:inline text-slate-400">•</span>
-                <span class="text-slate-300 font-medium">Shri Dwarka Kadva Patel Samaj — Just 5 Mins from Dwarkadhish Temple</span>
+                <span class="hidden md:inline text-slate-400">•</span>
+                <span class="text-slate-300 hidden md:inline">Shri Dwarka Kadva Patel Samaj — Near T.V. Station</span>
             </div>
-            <div class="flex items-center gap-4 text-xs">
-                <a href="tel:+918398967642" class="hover:text-gold-400 transition flex items-center gap-1">
+            <div class="flex items-center gap-4">
+                <a href="tel:+918398967642" class="hover:text-gold-400 transition flex items-center gap-1 font-semibold text-slate-200">
                     <span class="material-symbols-outlined text-[15px] text-gold-400">call</span>
                     <span>+91 8398967642</span>
                 </a>
-                <span class="text-slate-600 hidden md:inline">|</span>
-                <a href="mailto:umadwarka16@gmail.com" class="hover:text-gold-400 transition hidden md:flex items-center gap-1">
+                <span class="text-slate-600 hidden sm:inline">|</span>
+                <a href="mailto:umadwarka16@gmail.com" class="hover:text-gold-400 transition hidden sm:flex items-center gap-1 text-slate-300">
                     <span class="material-symbols-outlined text-[15px] text-gold-400">mail</span>
                     <span>umadwarka16@gmail.com</span>
                 </a>
@@ -116,90 +116,108 @@
     </div>
 
     <!-- Main Navigation Bar -->
-    <header id="mainHeader" class="sticky top-0 z-50 glass-nav border-b border-slate-200/80 transition-all duration-300">
+    <header id="mainHeader" class="sticky top-0 z-50 glass-nav border-b border-slate-200/80 transition-all duration-300 py-2 sm:py-3">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20 transition-all duration-300" id="navContainer">
+            <div class="flex items-center justify-between" id="navContainer">
                 
                 <!-- Logo & Brand Title -->
-                <a href="#" class="flex items-center gap-3 group">
-                    <div class="relative w-12 h-12 rounded-xl bg-gradient-to-br from-navy-900 to-navy-800 p-1 flex items-center justify-center shadow-md ring-1 ring-gold-500/30 group-hover:ring-gold-500 transition-all duration-300">
-                        <img src="images/logo.png" alt="Kadva Patel Samaj Dwarka Logo" class="w-full h-full object-contain filter drop-shadow"/>
+                <a href="#home" class="flex items-center gap-2.5 sm:gap-3 group">
+                    <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-navy-900 to-navy-800 p-1 flex items-center justify-center shadow ring-1 ring-gold-500/30 group-hover:ring-gold-500 transition shrink-0">
+                        <img src="images/logo.png" alt="Kadva Patel Samaj Logo" class="w-full h-full object-contain filter drop-shadow"/>
                     </div>
                     <div>
-                        <div class="font-serif font-bold text-lg md:text-xl text-navy-900 leading-tight tracking-tight flex items-center gap-1.5">
-                            KADVA PATEL LODGE
-                            <span class="text-gold-500 text-xs font-sans font-semibold uppercase tracking-wider px-1.5 py-0.5 rounded bg-gold-50 border border-gold-200 hidden lg:inline">Dwarka</span>
+                        <div class="font-serif font-bold text-base sm:text-lg text-navy-900 leading-tight">
+                            Kadva Patel Samaj
                         </div>
-                        <p class="text-[11px] font-medium text-slate-500 uppercase tracking-widest">Heritage & Pilgrim Hospitality</p>
+                        <p class="text-[11px] font-semibold text-gold-600 tracking-wider uppercase">Dwarka Lodge</p>
                     </div>
                 </a>
 
-                <!-- Desktop Navigation Links -->
-                <nav class="hidden lg:flex items-center gap-7">
-                    <a href="#home" class="text-sm font-semibold text-gold-600 hover:text-gold-700 transition relative py-1 after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-gold-500 after:rounded-full">Home</a>
-                    <a href="#rooms" class="text-sm font-semibold text-slate-700 hover:text-gold-600 transition py-1">Rooms & Suites</a>
-                    <a href="#why-us" class="text-sm font-semibold text-slate-700 hover:text-gold-600 transition py-1">Why Choose Us</a>
-                    <a href="#amenities" class="text-sm font-semibold text-slate-700 hover:text-gold-600 transition py-1">Amenities</a>
-                    <a href="#attractions" class="text-sm font-semibold text-slate-700 hover:text-gold-600 transition py-1">Darshan Guide</a>
-                    <a href="#gallery" class="text-sm font-semibold text-slate-700 hover:text-gold-600 transition py-1">Gallery</a>
-                    <a href="#reviews" class="text-sm font-semibold text-slate-700 hover:text-gold-600 transition py-1">Reviews</a>
-                    <a href="#location" class="text-sm font-semibold text-slate-700 hover:text-gold-600 transition py-1">Location</a>
+                <!-- Desktop Navigation Links (Simple & Clean) -->
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a href="#home" class="text-sm font-semibold text-slate-700 hover:text-gold-600 transition">Home</a>
+                    <a href="#rooms" class="text-sm font-semibold text-slate-700 hover:text-gold-600 transition">Rooms</a>
+                    <a href="#amenities" class="text-sm font-semibold text-slate-700 hover:text-gold-600 transition">Amenities</a>
+                    <a href="#attractions" class="text-sm font-semibold text-slate-700 hover:text-gold-600 transition">Sightseeing</a>
+                    <a href="#gallery" class="text-sm font-semibold text-slate-700 hover:text-gold-600 transition">Gallery</a>
+                    <a href="#location" class="text-sm font-semibold text-slate-700 hover:text-gold-600 transition">Contact</a>
                 </nav>
 
-                <!-- Header Actions -->
-                <div class="hidden sm:flex items-center gap-3">
-                    <a href="https://wa.me/918398967642?text=Hello%20Kadva%20Patel%20Samaj%20Dwarka,%20I%20would%20like%20to%20inquire%20about%20room%20availability." target="_blank" class="p-2.5 rounded-xl border border-emerald-500/30 text-emerald-600 hover:bg-emerald-50 transition flex items-center justify-center" title="Chat on WhatsApp">
-                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                <!-- Header Actions (Visible on Mobile & Desktop) -->
+                <div class="flex items-center gap-2 sm:gap-3">
+                    <a href="https://wa.me/918398967642?text=Hello%20Kadva%20Patel%20Samaj%20Dwarka,%20I%20would%20like%20to%20inquire%20about%20room%20availability." target="_blank" class="p-2 sm:p-2.5 rounded-xl border border-emerald-500/30 text-emerald-600 hover:bg-emerald-50 transition flex items-center justify-center" title="Chat on WhatsApp">
+                        <svg class="w-4 h-4 sm:w-5 sm:h-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
                     </a>
-                    <button onclick="openBookingModal('General Inquiry', 'Best Rate')" class="px-5 py-2.5 rounded-xl bg-navy-900 hover:bg-gold-600 text-white font-semibold text-sm shadow-md hover:shadow-lg transition-all duration-300 flex items-center gap-2">
-                        <span class="material-symbols-outlined text-[18px]">calendar_month</span>
-                        <span>Book A Room</span>
+                    
+                    <button onclick="openBookingModal('General Inquiry', 'Best Rate')" class="px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl bg-navy-900 hover:bg-gold-600 text-white font-semibold text-xs sm:text-sm shadow transition flex items-center gap-1.5">
+                        <span class="material-symbols-outlined text-base">calendar_month</span>
+                        <span>Book</span>
+                    </button>
+
+                    <!-- Mobile Hamburger Menu Button -->
+                    <button id="mobileMenuBtn" type="button" class="lg:hidden p-2 rounded-xl text-navy-900 hover:bg-slate-100 transition flex items-center justify-center" aria-label="Toggle Menu">
+                        <span class="material-symbols-outlined text-2xl">menu</span>
                     </button>
                 </div>
-
-                <!-- Mobile Menu Button -->
-                <button id="mobileMenuBtn" type="button" class="lg:hidden p-2.5 rounded-xl text-navy-900 hover:bg-slate-100 transition" aria-label="Toggle Menu">
-                    <span class="material-symbols-outlined text-3xl">menu</span>
-                </button>
             </div>
         </div>
 
-        <!-- Mobile Drawer -->
+        <!-- Clean, Mobile-Friendly Slide Drawer -->
         <div id="mobileDrawer" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden transition-opacity duration-300 opacity-0">
-            <div class="fixed top-0 right-0 w-80 max-w-[85%] h-full bg-white shadow-2xl p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-out" id="mobileDrawerContent">
+            <div class="fixed top-0 right-0 w-72 max-w-[85%] h-full bg-white shadow-2xl p-5 flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-out" id="mobileDrawerContent">
                 <div>
-                    <div class="flex justify-between items-center pb-4 border-b border-slate-100 mb-6">
-                        <div class="flex items-center gap-2.5">
-                            <img src="images/logo.png" class="w-9 h-9 object-contain" alt="Logo"/>
-                            <span class="font-serif font-bold text-navy-900 text-base">Kadva Patel Lodge</span>
+                    <div class="flex justify-between items-center pb-3 border-b border-slate-100 mb-4">
+                        <div class="flex items-center gap-2">
+                            <img src="images/logo.png" class="w-8 h-8 object-contain" alt="Logo"/>
+                            <div>
+                                <span class="font-serif font-bold text-navy-900 text-sm block leading-tight">Kadva Patel Samaj</span>
+                                <span class="text-[10px] text-gold-600 font-semibold uppercase tracking-wider">Dwarka Lodge</span>
+                            </div>
                         </div>
-                        <button id="closeDrawerBtn" class="p-1.5 rounded-lg text-slate-500 hover:bg-slate-100 transition">
-                            <span class="material-symbols-outlined text-2xl">close</span>
+                        <button id="closeDrawerBtn" class="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition">
+                            <span class="material-symbols-outlined text-xl">close</span>
                         </button>
                     </div>
-                    <nav class="flex flex-col space-y-3 font-semibold text-slate-700">
-                        <a href="#home" class="mobile-link px-3 py-2 rounded-lg hover:bg-gold-50 hover:text-gold-600 transition">Home</a>
-                        <a href="#rooms" class="mobile-link px-3 py-2 rounded-lg hover:bg-gold-50 hover:text-gold-600 transition">Our Rooms & Suites</a>
-                        <a href="#why-us" class="mobile-link px-3 py-2 rounded-lg hover:bg-gold-50 hover:text-gold-600 transition">Why Choose Us</a>
-                        <a href="#amenities" class="mobile-link px-3 py-2 rounded-lg hover:bg-gold-50 hover:text-gold-600 transition">Amenities</a>
-                        <a href="#attractions" class="mobile-link px-3 py-2 rounded-lg hover:bg-gold-50 hover:text-gold-600 transition">Darshan Guide</a>
-                        <a href="#gallery" class="mobile-link px-3 py-2 rounded-lg hover:bg-gold-50 hover:text-gold-600 transition">Campus Gallery</a>
-                        <a href="#reviews" class="mobile-link px-3 py-2 rounded-lg hover:bg-gold-50 hover:text-gold-600 transition">Guest Reviews</a>
-                        <a href="#location" class="mobile-link px-3 py-2 rounded-lg hover:bg-gold-50 hover:text-gold-600 transition">Location & Directions</a>
+                    <nav class="flex flex-col space-y-1 text-sm font-semibold text-slate-700">
+                        <a href="#home" class="mobile-link flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-gold-50 hover:text-gold-600 transition">
+                            <span class="material-symbols-outlined text-gold-600 text-lg">home</span>
+                            <span>Home</span>
+                        </a>
+                        <a href="#rooms" class="mobile-link flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-gold-50 hover:text-gold-600 transition">
+                            <span class="material-symbols-outlined text-gold-600 text-lg">hotel</span>
+                            <span>Rooms & Rates</span>
+                        </a>
+                        <a href="#why-us" class="mobile-link flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-gold-50 hover:text-gold-600 transition">
+                            <span class="material-symbols-outlined text-gold-600 text-lg">verified</span>
+                            <span>Why Choose Us</span>
+                        </a>
+                        <a href="#amenities" class="mobile-link flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-gold-50 hover:text-gold-600 transition">
+                            <span class="material-symbols-outlined text-gold-600 text-lg">restaurant</span>
+                            <span>Amenities & Food</span>
+                        </a>
+                        <a href="#attractions" class="mobile-link flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-gold-50 hover:text-gold-600 transition">
+                            <span class="material-symbols-outlined text-gold-600 text-lg">temple_hindu</span>
+                            <span>Dwarka Sightseeing</span>
+                        </a>
+                        <a href="#gallery" class="mobile-link flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-gold-50 hover:text-gold-600 transition">
+                            <span class="material-symbols-outlined text-gold-600 text-lg">photo_library</span>
+                            <span>Photo Gallery</span>
+                        </a>
+                        <a href="#location" class="mobile-link flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-gold-50 hover:text-gold-600 transition">
+                            <span class="material-symbols-outlined text-gold-600 text-lg">location_on</span>
+                            <span>Location & Contact</span>
+                        </a>
                     </nav>
                 </div>
-                <div class="pt-6 border-t border-slate-100 space-y-3">
-                    <button onclick="openBookingModal('General Inquiry', 'Best Rate'); closeDrawer();" class="w-full py-3.5 rounded-xl bg-navy-900 text-white font-semibold text-sm shadow flex items-center justify-center gap-2">
-                        <span class="material-symbols-outlined text-sm">calendar_month</span>
-                        <span>Book Room Online</span>
-                    </button>
-                    <a href="https://wa.me/918398967642" target="_blank" class="w-full py-3.5 rounded-xl bg-emerald-600 text-white font-semibold text-sm shadow flex items-center justify-center gap-2">
-                        <span class="material-symbols-outlined text-sm">chat</span>
-                        <span>WhatsApp Quick Chat</span>
+                
+                <div class="pt-4 border-t border-slate-100 space-y-2.5">
+                    <a href="tel:+918398967642" class="w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-navy-900 font-bold text-xs flex items-center justify-center gap-2 transition">
+                        <span class="material-symbols-outlined text-base text-gold-600">call</span>
+                        <span>Call +91 8398967642</span>
                     </a>
-                    <a href="tel:+918398967642" class="w-full py-3 rounded-xl border border-slate-200 text-slate-700 font-semibold text-sm flex items-center justify-center gap-2">
-                        <span class="material-symbols-outlined text-sm">call</span>
-                        <span>+91 8398967642</span>
+                    <a href="https://wa.me/918398967642?text=Hello%20Kadva%20Patel%20Samaj%20Dwarka,%20I%20am%20inquiring%20about%20room%20booking." target="_blank" class="w-full py-2.5 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center justify-center gap-2 transition shadow">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                        <span>WhatsApp Booking</span>
                     </a>
                 </div>
             </div>
@@ -1391,18 +1409,15 @@
             }
         });
 
-        // Sticky Navbar subtle shrink on scroll
+        // Sticky Navbar subtle shadow on scroll
         window.addEventListener('scroll', () => {
             const header = document.getElementById('mainHeader');
-            const navContainer = document.getElementById('navContainer');
-            if (window.scrollY > 40) {
-                navContainer.classList.remove('h-20');
-                navContainer.classList.add('h-16');
-                header.classList.add('shadow-md');
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-md', 'bg-white/95');
+                header.classList.remove('bg-white/90');
             } else {
-                navContainer.classList.remove('h-16');
-                navContainer.classList.add('h-20');
-                header.classList.remove('shadow-md');
+                header.classList.remove('shadow-md', 'bg-white/95');
+                header.classList.add('bg-white/90');
             }
         });
 
