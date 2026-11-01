@@ -1,0 +1,11 @@
+# Ignore Python utility scripts
+*.py
+__pycache__/
+
+# Ignore legacy files and drafts
+index_old.html
+rooms_section.html
+
+# Ignore system files
+.DS_Store
+*.log
