@@ -259,7 +259,7 @@ function sendToWhatsApp(event) {
     const phone = document.getElementById('custPhone').value;
     const guests = document.getElementById('totalGuests').value;
     
-    const whatsappMobile = "918398967642"; // User's WhatsApp number
+    const whatsappMobile = "919201195596"; // User's WhatsApp number
     const message = `*Booking Enquiry - Kadva Patel Samaj Dwarka*%0A%0A` +
                     `*Room:* ${room}%0A` +
                     `*Name:* ${name}%0A` +
